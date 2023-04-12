@@ -1,5 +1,5 @@
-const { Telegraf } = require("telegraf");
-const TOKEN = "5153026043:AAEOA6Jgze21I8PGuZWKJoNMGY1Wzl6S5OI";
+import { Telegraf } from "telegraf";
+const TOKEN = "6062111377:AAGkrMBMFBWVtiF3RQDtzPz5FSN2fmiMWIs";
 const bot = new Telegraf(TOKEN);
 
 const web_link = "https://celebrated-torte-184681.netlify.app/";
@@ -7,7 +7,7 @@ const web_link = "https://celebrated-torte-184681.netlify.app/";
 bot.start((ctx) =>
   ctx.reply("Welcome :)))))", {
     reply_markup: {
-      keyboard: [[{ text: "web app", web_app: { url: web_link } }]],
+      keyboard: [[{ text: "OY: Tickets", OY_Tickets: { url: web_link } }]],
     },
   })
 );
